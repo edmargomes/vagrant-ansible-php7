@@ -2,5 +2,4 @@
 - include: php.yml
 - include: nginx.yml
 - include: mysql.yml
-- include: adminer.yml
 - include: front.yml
