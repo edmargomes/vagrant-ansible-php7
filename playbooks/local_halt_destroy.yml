@@ -9,14 +9,6 @@
       file: dest=../host.ini state=absent
       delegate_to: 127.0.0.1
 
-    - name: local actions destroy | remove reference of host from local hosts file
-      lineinfile:
-          dest='{{ hosts_file_location }}'
-          state=absent
-          regexp='.*?\sadminer.{{ webserver_hostname }}'
-      delegate_to: 127.0.0.1
-      sudo: true
-
     - name: local actions | remove reference of virtual hosts from local hosts file
       lineinfile:
           dest='{{ hosts_file_location }}'

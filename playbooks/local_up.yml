@@ -18,14 +18,6 @@
       template: src=templates/host.j2 dest=../host.ini
       delegate_to: 127.0.0.1
 
-    - name: local actions | remove reference of host from local hosts file
-      lineinfile:
-          dest='{{ hosts_file_location }}'
-          state=absent
-          regexp='.*?\sadminer.{{ webserver_hostname }}'
-      delegate_to: 127.0.0.1
-      sudo: true
-
     - name: local actions | add reference of host to local hosts file
       lineinfile:
           dest='{{ hosts_file_location }}'
