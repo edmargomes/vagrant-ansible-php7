@@ -9,7 +9,7 @@ That setup is heavily inspired by [https://github.com/hashbangcode/vlad](https:/
 * Ubuntu 14.04 64-bit
 * Nginx
 * PHP7-FPM
-* MySQL + Adminer
+* MySQL
 * Codeception + PhantomJS + Selenium + Chrome
 * NodeJS + Grunt + Bower + Gulp
 * Composer

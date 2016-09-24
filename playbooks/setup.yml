@@ -9,7 +9,6 @@
     - nginx
     - php
     - mysql
-    - adminer
     - automated_testing
     - front
 
